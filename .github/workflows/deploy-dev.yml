@@ -14,6 +14,9 @@ concurrency:
 
 jobs:
   deploy:
+    # Disabled for Hemi as no deployment previews are required.
+    if: false
+
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write

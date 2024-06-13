@@ -8,6 +8,9 @@ on:
 
 jobs:
   CLAAssistant:
+    # Disabled for Hemi as CLA (Contributor License Agreement) is not required.
+    if: false
+
     runs-on: ubuntu-latest
     steps:
       - name: 'CLA Assistant'
