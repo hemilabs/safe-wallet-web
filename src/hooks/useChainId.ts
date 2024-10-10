@@ -8,7 +8,9 @@ import { parsePrefixedAddress } from '@/utils/addresses'
 import useWallet from './wallets/useWallet'
 import useChains from './useChains'
 
-const defaultChainId = IS_PRODUCTION ? chains.eth : chains.sep
+// Once Hemi Mainnet is officially launched, the production default shall be set
+// to `chins.hemi`.
+const defaultChainId = IS_PRODUCTION ? chains['hemi-sep'] : chains['hemi-sep']
 
 // Use the location object directly because Next.js's router.query is available only on mount
 const getLocationQuery = (): ParsedUrlQuery => {

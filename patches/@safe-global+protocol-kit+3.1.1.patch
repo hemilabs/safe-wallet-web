@@ -1,0 +1,20 @@
+diff --git a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
+index c22dc1e..43f5483 100644
+--- a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
++++ b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
+@@ -172,6 +172,7 @@ exports.networks = [
+     { chainId: 42161n, shortName: 'arb1' },
+     { chainId: 42170n, shortName: 'arb-nova' },
+     { chainId: 42220n, shortName: 'celo' },
++    { chainId: 43111n, shortName: 'hemi' },
+     { chainId: 43113n, shortName: 'fuji' },
+     { chainId: 43114n, shortName: 'avax' },
+     { chainId: 43288n, shortName: 'boba-avax' },
+@@ -211,6 +212,7 @@ exports.networks = [
+     { chainId: 555666n, shortName: 'eclipset' },
+     { chainId: 622277n, shortName: 'rth' },
+     { chainId: 713715n, shortName: 'sei-devnet' },
++    { chainId: 743111n, shortName: 'hemi-sep' },
+     { chainId: 7225878n, shortName: 'saakuru' },
+     { chainId: 7777777n, shortName: 'zora' },
+     { chainId: 6038361n, shortName: 'azkyt' },
