@@ -75,16 +75,13 @@ const Footer = (): ReactElement | null => {
             </li>
           </>
         ) : (
-          <li>{'This is an unofficial distribution of Safe{Wallet}'}</li>
+          <li>{'This is an unofficial distribution of Safe{Wallet} by Hemi Labs'}</li>
         )}
 
         <li>
-          <ExternalLink href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`} noIcon>
+          <ExternalLink href={`${packageJson.homepage}`} noIcon>
             <SvgIcon component={GitHubIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> v{packageJson.version}
           </ExternalLink>
-        </li>
-        <li>
-          <AppstoreButton placement="footer" />
         </li>
       </ul>
     </footer>
