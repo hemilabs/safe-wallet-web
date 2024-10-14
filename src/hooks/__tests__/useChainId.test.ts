@@ -56,7 +56,7 @@ describe('useChainId hook', () => {
 
   it('should return the default chainId if no query params', () => {
     const { result } = renderHook(() => useChainId())
-    expect(result.current).toBe('11155111')
+    expect(result.current).toBe('743111')
   })
 
   it('should return the chainId based on the chain query', () => {
