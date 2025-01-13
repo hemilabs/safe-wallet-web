@@ -60,7 +60,7 @@ describe('Share Safe App Page', () => {
           },
           {
             platform: sdk.SafeAppSocialPlatforms.TWITTER,
-            url: 'https://twitter.com/safe',
+            url: 'https://x.com/safe',
           },
         ],
       },
