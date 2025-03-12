@@ -27,7 +27,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Deploy Main
         if: github.ref == 'refs/heads/hemi-main'
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           push: true
           tags: hemilabs/safe-wallet-web:staging
@@ -36,6 +36,8 @@ jobs:
             linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          provenance: true
+          sbom: true
       - name: Deploy Develop
         if: github.ref == 'refs/heads/dev'
         uses: docker/build-push-action@v5

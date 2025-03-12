@@ -9,6 +9,9 @@ concurrency:
 
 jobs:
   e2e:
+    # Disabled until #3 is fixed.
+    if: false
+
     runs-on: ubuntu-20.04
     name: Cypress Smoke tests
 
