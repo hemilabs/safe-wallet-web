@@ -10,7 +10,7 @@ import useChains from './useChains'
 
 // Once Hemi Mainnet is officially launched, the production default shall be set
 // to `chins.hemi`.
-const defaultChainId = IS_PRODUCTION ? chains['hemi-sep'] : chains['hemi-sep']
+const defaultChainId = IS_PRODUCTION ? chains['hemi'] : chains['hemi-sep']
 
 // Use the location object directly because Next.js's router.query is available only on mount
 const getLocationQuery = (): ParsedUrlQuery => {
