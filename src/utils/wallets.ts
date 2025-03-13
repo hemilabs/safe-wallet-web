@@ -19,7 +19,7 @@ export const isWalletRejection = (err: EthersError | Error): boolean => {
 }
 
 export const isLedger = (wallet: ConnectedWallet): boolean => {
-  return wallet.label.toUpperCase() === WALLET_KEYS.LEDGER
+  return false
 }
 
 export const isWalletConnect = (wallet: ConnectedWallet): boolean => {
@@ -27,9 +27,7 @@ export const isWalletConnect = (wallet: ConnectedWallet): boolean => {
 }
 
 export const isHardwareWallet = (wallet: ConnectedWallet): boolean => {
-  return [WALLET_KEYS.LEDGER, WALLET_KEYS.TREZOR, WALLET_KEYS.KEYSTONE].includes(
-    wallet.label.toUpperCase() as WALLET_KEYS,
-  )
+  return [WALLET_KEYS.KEYSTONE].includes(wallet.label.toUpperCase() as WALLET_KEYS)
 }
 
 export const isSmartContractWallet = memoize(

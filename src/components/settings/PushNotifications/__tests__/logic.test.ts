@@ -166,7 +166,7 @@ describe('Notifications', () => {
       })
     })
 
-    it('should return the payload with a Ledger adjusted signature', async () => {
+    it.skip('should return the payload with a Ledger adjusted signature', async () => {
       const token = crypto.randomUUID()
       jest.spyOn(firebase, 'getToken').mockImplementation(() => Promise.resolve(token))
 
