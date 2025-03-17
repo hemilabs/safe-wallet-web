@@ -1,4 +1,8 @@
 FROM node:18-alpine
+
+# Fix CVE-2024-8176
+RUN apk update && apk upgrade libexpat
+
 RUN apk add --no-cache libc6-compat git python3 py3-pip make g++ libusb-dev eudev-dev linux-headers
 WORKDIR /app
 COPY . .
