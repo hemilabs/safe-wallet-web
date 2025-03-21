@@ -24,6 +24,8 @@ jobs:
 
       - uses: ./.github/workflows/yarn
 
+      - run: git checkout ${{ github.ref }}
+
       - name: Annotations and coverage report
         uses: ArtiomTr/jest-coverage-report-action@v2.3.1
         with:
