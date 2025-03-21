@@ -13,8 +13,9 @@ concurrency:
 jobs:
   test:
     permissions:
-      contents: read
+      actions: write
       checks: write
+      contents: read
       pull-requests: write
 
     runs-on: ubuntu-latest

@@ -1,12 +1,12 @@
 # We use this instead of action-download-artifact. See discussion on
 # https://github.com/dawidd6/action-download-artifact/issues/240
 set -xe
-ORG="safe-global"
+ORG="hemilabs"
 REPO="safe-wallet-web"
 WORKFLOW="nextjs-bundle-analysis.yml"
 ARTIFACT_NAME="bundle"
 DESTINATION=".next/analyze/base"
-BASE_BRANCH="dev"
+BASE_BRANCH="hemi-main"
 
 ARTIFACTS_URL=$(
   gh api \
